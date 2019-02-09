@@ -1,12 +1,12 @@
 {
     "name": "qiita-spam-filtering",
-    "version": "0.0.1",
-    "manifest_version": 1,
+    "version": "0.0.10",
+    "manifest_version": 2,
     "description": "spam filter of Qiita",
     "content_scripts": [{
         "matches": [
-            "https://qiita.com/items*",
-            "https://qiita.com/search?*"
+            "https://qiita.com/items",
+            "https://qiita.com/search*"
         ],
         "js": [
             "jquery.min.js",
