@@ -1,7 +1,7 @@
 function include_ja(str) {
     // return (str.match(/[\u30a0-\u30ff\u3040-\u309f\u3005-\u3006\u30e0-\u9fcf]{3,}/)) ? true : false
     // FYI: [Javascript Detect Chinese and Japanese Characters – FlyingSky]( http://flyingsky.github.io/2018/01/26/javascript-detect-chinese-japanese/ )
-    const REGEX_JAPANESE = /([\u3000-\u303f]|[\u3040-\u309f]|[\u30a0-\u30ff]|[\uff00-\uff9f]|[\u4e00-\u9faf]|[\u3400-\u4dbf]){3,}/;
+    const REGEX_JAPANESE = /([\u3000-\u303f]|[\u3040-\u309f]|[\u30a0-\u30ff]|[\uff00-\uff9f]|[\u4e00-\u9faf]|[\u3400-\u4dbf]){10,}/;
     return REGEX_JAPANESE.test(str);
 }
 
