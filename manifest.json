@@ -1,17 +1,13 @@
 {
-    "name": "qiita-spam-filtering",
-    "version": "0.0.11",
-    "manifest_version": 2,
-    "description": "spam filter of Qiita",
-    "content_scripts": [{
-        "matches": [
-            "https://qiita.com/items",
-            "https://qiita.com/search*"
-        ],
-        "js": [
-            "jquery.min.js",
-            "script.js"
-        ],
-        "run_at": "document_start"
-    }]
+  "name": "qiita-spam-filtering",
+  "version": "0.0.11",
+  "manifest_version": 3,
+  "description": "spam filter of Qiita",
+  "content_scripts": [
+    {
+      "matches": ["https://qiita.com/items", "https://qiita.com/search*"],
+      "js": ["jquery.min.js", "script.js"],
+      "run_at": "document_start"
+    }
+  ]
 }
